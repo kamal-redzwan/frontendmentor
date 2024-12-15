@@ -1,0 +1,121 @@
+:root {
+  --clr-primary-bright-orange: hsl(31, 77%, 52%);
+  --clr-primary-dark-cyan: hsl(184, 100%, 22%);
+  --clr-primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* paragraphs */
+  --clr-neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* background, headings, buttons */
+  --clr-neutral-very-light-gray: hsl(0, 0%, 95%);
+
+  --font-family-lexend-deca: 'Lexend Deca', serif;
+  --font-family-big-shoulders-display: 'Big Shoulders Display', sans-serif;
+
+  --fw-bold: 700;
+
+  --border-radius: 0.5rem;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--clr-neutral-very-light-gray);
+  margin: 4rem 1rem;
+  font-family: var(--font-family-lexend-deca);
+}
+
+.cars {
+  max-width: 20.4375rem;
+  border-radius: var(--border-radius);
+}
+
+.car {
+  display: grid;
+  place-items: start;
+  padding: 3rem;
+  color: var(--clr-neutral-very-light-gray);
+}
+
+.sedans {
+  background-color: var(--clr-primary-bright-orange);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.suvs {
+  background-color: var(--clr-primary-dark-cyan);
+}
+
+.luxury {
+  background-color: var(--clr-primary-very-dark-cyan);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.car-icon {
+  margin-block-end: 2.1875rem;
+}
+
+.car-title {
+  font-family: var(--font-family-big-shoulders-display);
+  font-size: 2.5rem;
+  margin-block-end: 1.5625rem;
+  font-weight: var(--fw-bold);
+}
+
+.car-copy {
+  font-size: 0.9375rem;
+  line-height: 1.5625;
+  color: var(--clr-neutral-transparent-white);
+  margin-block-end: 1.5625rem;
+}
+
+.btn-primary {
+  all: unset;
+  font-family: var(--font-family-lexend-deca);
+  padding: 1rem 2rem;
+  background-color: var(--clr-neutral-very-light-gray);
+  border-radius: 50vh;
+  font-size: 0.9375rem;
+  line-height: 1.5625;
+}
+
+.btn-primary:hover {
+  /* make the outline inside the button */
+  box-shadow: inset 0 0 0 2px var(--clr-neutral-very-light-gray);
+
+  background-color: transparent;
+  color: var(--clr-neutral-very-light-gray);
+  cursor: pointer;
+}
+
+.orange {
+  color: var(--clr-primary-bright-orange);
+}
+
+.cyan {
+  color: var(--clr-primary-dark-cyan);
+}
+
+.dark-cyan {
+  color: var(--clr-primary-very-dark-cyan);
+}
+
+@media (min-width: 64rem) {
+  .cars {
+    max-width: 57.5rem;
+    display: flex;
+  }
+
+  .sedans {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+  }
+
+  .luxury {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+
+  .car-copy {
+    margin-block-end: 5.1875rem;
+  }
+}

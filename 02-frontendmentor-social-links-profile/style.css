@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey-700: hsl(0, 0%, 20%);
+  --clr-grey-800: hsl(0, 0%, 12%);
+  --clr-grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  height: 100vh;
+
+  font-family: 'Inter', serif;
+  font-size: 14px;
+
+  background-color: var(--clr-grey-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.wrapper {
+  height: 600px;
+  width: 384px;
+
+  background-color: var(--clr-grey-800);
+
+  padding: 2.3rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  border-radius: 1rem;
+}
+
+.avatar {
+  height: 6rem;
+  border-radius: 100%;
+
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 24px;
+  color: var(--clr-white);
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.location {
+  color: var(--clr-green);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--clr-white);
+
+  margin-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--clr-white);
+  text-align: center;
+  font-weight: 600;
+
+  background-color: var(--clr-grey-700);
+  border-radius: 0.5rem;
+
+  padding-block: 0.8rem;
+}
+
+.links a:hover,
+.links a:focus {
+  background-color: var(--clr-green);
+  color: var(--clr-grey-800);
+
+  /* Removing focus ring */
+  outline: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+
+  position: absolute;
+  bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
