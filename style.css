@@ -1,7 +1,75 @@
+/* Fonts */
+
+html {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* Reset */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration-style: dotted;
+  color: inherit;
+}
+
+img, svg {
+  width: 100%;
+  display: inline-block;
+}
+
+/* Styles */
+
+body {
+  background-color: rgb(217, 217, 217);
+  display: grid;
+  place-items: center;
+  margin: 2rem;
+}
+
+.solutions {
+  max-width: 786px;
+}
+
+.solutions__title {
+  text-align: center;
+  margin-block-end: 2rem;
+}
+
+.solutions__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.list__item {
+  /* background-color: rgb(219, 219, 219); */
+  /* border-radius: 1rem; */
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.item__image {
+  /* border-radius: 1rem 1rem 0 0; */
+}
+
+.item__title {
+  text-align: center;
+  padding-block-start: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .solutions__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
