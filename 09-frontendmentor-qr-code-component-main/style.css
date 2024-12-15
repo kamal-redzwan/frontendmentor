@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-slate-300: hsl(212, 45%, 89%);
+  --clr-slate-500: hsl(216, 15%, 48%);
+  --clr-slate-900: hsl(218, 44%, 22%);
+
+  --font-family: 'Outfit', sans-serif;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --fs-normal: 15px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  background-color: var(--clr-slate-300);
+  
+  height: 100vh;
+  
+  display: grid;
+  place-items: center;
+  
+  font-size: var(--fs-normal);
+  font-family: var(--font-family);
+}
+
+.card {
+  background-color: var(--clr-white);
+  padding: 16px 16px 40px 16px;
+
+  border-radius: 20px;
+  
+  max-width: 320px;
+
+  display: grid;
+  place-content: center;
+}
+
+.qr-container img {
+  width: 288px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.copy {
+  padding-inline: 16px;
+  text-align: center;
+}
+
+.copy h1 {
+  color: var(--clr-slate-900);
+  font-size: 22px;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.copy p {
+  color: var(--clr-slate-500);
+  font-size: 15px;
+  line-height: 120%;
+}
