@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://kamal-redzwan.github.io/02-frontendmentor-social-links-profile/)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/social-links-challange-with-vanilla-html-and-css-yy-K9x3mV5)
+- Live Site URL: [GitHub Pages](https://kamal-redzwan.github.io/frontendmentor/02-frontendmentor-social-links-profile)
 
 ## My process
 
