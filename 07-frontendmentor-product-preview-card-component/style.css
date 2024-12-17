@@ -124,6 +124,8 @@ button {
   gap: 1rem;
 
   border-radius: 0.5rem;
+
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {
