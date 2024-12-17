@@ -1,7 +1,10 @@
 /* Fonts */
 
 html {
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
 /* Reset */
@@ -19,11 +22,12 @@ ul {
 }
 
 a {
-  text-decoration-style: dotted;
+  text-decoration: none;
   color: inherit;
 }
 
-img, svg {
+img,
+svg {
   width: 100%;
   display: inline-block;
 }
@@ -31,19 +35,19 @@ img, svg {
 /* Styles */
 
 body {
-  background-color: rgb(217, 217, 217);
+  background-color: #fff7f4;
   display: grid;
   place-items: center;
   margin: 2rem;
 }
 
-.solutions {
-  max-width: 786px;
+.solutions__title {
+  margin-block-end: 2rem;
 }
 
-.solutions__title {
-  text-align: center;
-  margin-block-end: 2rem;
+.solutions__title span {
+  font-size: 1.25rem;
+  font-weight: normal;
 }
 
 .solutions__list {
@@ -53,23 +57,57 @@ body {
 }
 
 .list__item {
-  /* background-color: rgb(219, 219, 219); */
-  /* border-radius: 1rem; */
-  min-height: 220px;
-  overflow: hidden;
+  padding: 1.25rem;
+  border: 1px dotted rgba(0, 0, 0, 0.6);
+  transition: border 600ms ease-in-out;
 }
 
-/* .item__image {
-  border-radius: 1rem 1rem 0 0;
-} */
+.list__item:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.list__item:hover .item__title-container .item__title {
+  text-decoration-style: solid;
+}
 
-.item__title {
-  text-align: center;
-  padding-block-start: .5rem;
+.item__details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-start: 1rem;
+}
+
+.item__title-container {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.item__title-container .item__title {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.arrow {
+  margin-block-start: 2px;
+  font-size: 1rem;
+}
+
+.item__details-container .item__tech {
+  font-size: 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
+  .header-spacer {
+    height: 3rem;
+  }
+
+  .solutions {
+    margin-inline: 4rem;
+  }
+
   .solutions__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    margin-block-start: 8rem;
   }
 }
