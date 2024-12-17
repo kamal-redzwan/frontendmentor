@@ -71,14 +71,14 @@ body {
 
 .item__details-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   padding-block-start: 1rem;
 }
 
 .item__title-container {
   display: flex;
-  gap: 0.25rem;
+  justify-content: space-between;
+  margin-block-end: 0.25rem;
 }
 
 .item__title-container .item__title {
@@ -89,8 +89,6 @@ body {
 }
 
 .arrow {
-  display: none;
-  margin-block-start: 2px;
   font-size: 1rem;
 }
 
@@ -108,11 +106,19 @@ body {
   }
 
   .solutions__list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-block-start: 5rem;
   }
+}
 
-  .arrow {
-    display: block;
+@media screen and (min-width: 1024px) {
+  .solutions__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .solutions__list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
