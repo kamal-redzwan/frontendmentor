@@ -59,7 +59,7 @@ body {
 .list__item {
   padding: 1.25rem;
   border: 1px dotted rgba(0, 0, 0, 0.6);
-  transition: border 600ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .list__item:hover {
@@ -89,6 +89,7 @@ body {
 }
 
 .arrow {
+  display: none;
   margin-block-start: 2px;
   font-size: 1rem;
 }
@@ -109,5 +110,9 @@ body {
   .solutions__list {
     grid-template-columns: repeat(4, 1fr);
     margin-block-start: 5rem;
+  }
+
+  .arrow {
+    display: block;
   }
 }
