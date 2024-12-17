@@ -41,11 +41,11 @@ body {
   margin: 2rem;
 }
 
-.solutions__title {
+.solutions__title-container {
   margin-block-end: 2rem;
 }
 
-.solutions__title span {
+.solutions__name {
   font-size: 1.25rem;
   font-weight: normal;
 }
@@ -105,6 +105,10 @@ body {
     margin-inline: 4rem;
   }
 
+  .solutions__title {
+    display: flex;
+  }
+
   .solutions__list {
     grid-template-columns: repeat(2, 1fr);
     margin-block-start: 5rem;
@@ -112,6 +116,12 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .solutions__title-container {
+    gap: .6rem;
+    display: flex;
+    align-items: baseline;
+  }
+
   .solutions__list {
     grid-template-columns: repeat(3, 1fr);
   }
