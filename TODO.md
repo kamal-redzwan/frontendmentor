@@ -1,5 +1,19 @@
 TODO
+
+Homepage
 [x] Add links to 02 project readme
 [x] Homepage - Add Links
 [x] Homepage - Add styles
 [x] Homepage - Add CSS Reset
+
+02 Social Links Profile
+[ ] Repair image path
+
+05 Result Summary Component
+[ ] Add `cursor: pointer` to button
+
+07 Product Peview Card Component
+[ ] Add `cursor: pointer` to button
+
+12 Social Proof Section
+[ ] Missing large breakpoint
