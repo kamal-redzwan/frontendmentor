@@ -103,3 +103,78 @@ body {
   line-height: 1.2;
   letter-spacing: -0.3px;
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat, url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+  }
+
+  .social-proof {
+    max-width: 69.3rem;
+    display: grid;
+    justify-items: center;
+    margin: 1rem 2rem;
+  }
+
+  .heading-stars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    margin-block-end: 4.3rem;
+
+    gap: 8rem;
+  }
+
+  .heading {
+    text-align: left;
+    max-width: 445px;
+  }
+
+  .heading h1 {
+    font-size: 3.5rem;
+    line-height: 0.8;
+    margin-block-end: 1rem;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+  }
+  .stars-rated {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    width: 445px;
+    padding-block: 1.5rem;
+    padding-inline: 2.5rem;
+  }
+
+  .stars-rated:nth-child(2) {
+    margin-left: 2rem;
+  }
+
+  .stars-rated:nth-child(3) {
+    margin-left: 4rem;
+  }
+
+  .star {
+    margin-block-end: 0;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 1.8rem;
+  }
+
+  .testimonial:nth-child(2) {
+    margin-block-start: 2rem;
+  }
+
+  .testimonial:nth-child(3) {
+    margin-block-start: 4rem;
+  }
+}
