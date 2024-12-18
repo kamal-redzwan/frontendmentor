@@ -28,6 +28,8 @@ body {
 }
 
 .feature-section {
+  display: grid;
+  place-items: center;
 }
 .feature__heading {
   font-size: 1.6rem;
@@ -59,6 +61,7 @@ body {
   border-radius: 0.53rem;
   position: relative;
   overflow: hidden;
+  height: fit-content;
 }
 
 .feature__card::before {
@@ -70,19 +73,19 @@ body {
   width: 100%;
 }
 
-.feature__card:nth-child(1)::before {
+.supervisor::before {
   background-color: var(--cyan);
 }
 
-.feature__card:nth-child(2)::before {
+.builder::before {
   background-color: var(--red);
 }
 
-.feature__card:nth-child(3)::before {
+.karma::before {
   background-color: var(--orange);
 }
 
-.feature__card:nth-child(4)::before {
+.calculator::before {
   background-color: var(--blue);
 }
 
@@ -100,4 +103,42 @@ body {
 
 img {
   margin-inline-start: auto;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    margin-block: 5.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+  }
+
+  .feature__text-container {
+    max-width: 36rem;
+  }
+
+  .feature__card-container {
+    max-width: 74rem;
+    grid-template-areas:
+      'card1 card2 card4'
+      'card1 card3 card4';
+    align-items: center;
+  }
+
+  .supervisor {
+    grid-area: card1;
+  }
+
+  .builder {
+    grid-area: card2;
+  }
+
+  .karma {
+    grid-area: card3;
+  }
+
+  .calculator {
+    grid-area: card4;
+  }
 }

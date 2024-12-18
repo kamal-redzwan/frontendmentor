@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    
+
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="style.css" />
 
@@ -25,17 +25,18 @@
   </head>
   <body>
     <main class="feature-section">
-      <h1 class="feature__heading">
-        Reliable, efficient delivery <span>Powered by Technology</span>
-      </h1>
-
-      <p class="feature__copy">
-        Our Artificial Intelligence powered tools use millions of project data
-        points to ensure that your project is successful
-      </p>
+      <div class="feature__text-container">
+        <h1 class="feature__heading">
+          Reliable, efficient delivery <span>Powered by Technology</span>
+        </h1>
+        <p class="feature__copy">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
 
       <div class="feature__card-container">
-        <div class="feature__card">
+        <div class="feature__card supervisor">
           <h2 class="card__title">Supervisor</h2>
           <p class="card__copy">
             Monitors activity to identify project roadblocks
@@ -43,15 +44,14 @@
           <img src="./images/icon-supervisor.svg" alt="illustration" />
         </div>
 
-        <div class="feature__card">
+        <div class="feature__card builder">
           <h2 class="card__title">Team Builder</h2>
           <p class="card__copy">
             Scans our talent network to create the optimal team for your project
           </p>
           <img src="./images/icon-team-builder.svg" alt="illustration" />
         </div>
-
-        <div class="feature__card">
+        <div class="feature__card karma">
           <h2 class="card__title">Karma</h2>
           <p class="card__copy">
             Regularly evaluates our talent to ensure quality
@@ -59,7 +59,7 @@
           <img src="./images/icon-karma.svg" alt="illustration" />
         </div>
 
-        <div class="feature__card">
+        <div class="feature__card calculator">
           <h2 class="card__title">Calculator</h2>
           <p class="card__copy">
             Uses data from past projects to provide better delivery estimates
