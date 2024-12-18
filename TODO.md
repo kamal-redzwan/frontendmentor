@@ -15,5 +15,5 @@ Homepage
 07 Product Peview Card Component
 [x] Add `cursor: pointer` to button
 
-12 Social Proof Section
-[ ] Missing large breakpoint
+14 Social Proof Section
+[x] Missing large breakpoint
