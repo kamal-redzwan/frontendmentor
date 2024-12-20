@@ -11,3 +11,96 @@
   --fw-normal: 400;
   --fw-bold: 600;
 }
+
+body {
+  background-color: var(--gradient1);
+  font-family: var(--ff-josefin);
+}
+
+.logo-mobile-container {
+  padding: 2rem;
+}
+
+.hero-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coming-soon__text-container {
+  padding-inline: 2rem;
+  padding-block-start: 4rem;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+.coming-soon__text-container {
+  text-align: center;
+}
+
+.coming-soon__heading {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  line-height: 1.05;
+  letter-spacing: 10.83px;
+  font-weight: var(--fw-light);
+  color: var(--desaturated-red);
+  margin-block-end: 1rem;
+}
+
+.coming-soon__heading span {
+  font-weight: var(--fw-bold);
+  color: var(--dark-grayish-red);
+}
+
+.coming-soon__copy {
+  font-size: 0.875rem;
+  line-height: 1.57142857rem;
+  color: var(--desaturated-red);
+  margin-block-end: 2rem;
+}
+
+.input-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--desaturated-red);
+  opacity: .6;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.input__email {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  background: transparent;
+}
+
+.input__email::placeholder {
+  font-family: var(--ff-josefin);
+  font-weight: var(--fw-light);
+  color: var(--desaturated-red);
+}
+
+.input__button {
+  background: var(--gradient2);
+  border: none;
+  border-radius: 3rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  box-shadow: 0 15px 20px hsl(0, 43%, 60%, 24.76%);
+}
+
+.input__error {
+  display: none;
+}
