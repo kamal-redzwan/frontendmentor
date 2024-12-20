@@ -104,9 +104,19 @@ body {
 
 .input__error {
   display: none;
+  color: var(--desaturated-red);
+  margin-block-start: .5rem;
+  margin-inline-start: 1.5rem;
+
 }
 
 @media screen and (min-width: 600px) {
+  body {
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
   .logo-mobile-container {
     display: none;
   }
