@@ -15,6 +15,7 @@
 body {
   background-color: var(--gradient1);
   font-family: var(--ff-josefin);
+  overflow: hidden;
 }
 
 .logo-mobile-container {
@@ -116,25 +117,22 @@ body {
   }
 
   .hero-image-container {
-    width: 40%;
-    overflow: hidden;
-    position: relative;
+    flex-basis: 40%;
   }
 
   .hero-image-container img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 
   .coming-soon__text-container {
+    flex-basis: 60%;
+    
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
+    justify-content: flex-start;
     padding-inline: 10.4rem;
-    padding-block-start: 4.7rem;
-    width: 60%;
+    padding-block: 4.7rem;
     text-align: left;
   }
 
@@ -147,12 +145,12 @@ body {
     font-size: 4rem;
     line-height: 1.1;
     letter-spacing: 17.32px;
-    width: 444px;
+    max-width: 444px;
   }
 
   .coming-soon__copy {
     font-size: 1rem;
     line-height: 1.75;
-    width: 444px;
+    max-width: 444px;
   }
 }
