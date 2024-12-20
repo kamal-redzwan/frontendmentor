@@ -31,7 +31,17 @@
         />
       </div>
       <div class="hero-image-container">
-        <img src="./images/hero-mobile.jpg" alt="picture of a woman" />
+        <picture>
+          <source
+            media="(max-width: 599px)"
+            srcset="./images/hero-mobile.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="./images/hero-desktop.jpg"
+          />
+          <img src="./images/hero-mobile.jpg" alt="picture of a woman" />
+        </picture>
       </div>
       <div class="coming-soon__text-container">
         <img
@@ -48,7 +58,12 @@
         </p>
 
         <div class="input-form">
-          <input class="input__email" type="email" required placeholder="Email Address" />
+          <input
+            class="input__email"
+            type="email"
+            required
+            placeholder="Email Address"
+          />
           <button class="input__button">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
               <path
