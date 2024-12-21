@@ -27,12 +27,18 @@ body {
   align-items: center;
 }
 
-.intro {
+.intro-text,
+.signup {
   display: flex;
   flex-direction: column;
 
   margin: auto 1.5rem;
   color: white;
+}
+
+
+.intro-text {
+  text-align: center;
 }
 
 .intro-heading {
@@ -41,11 +47,10 @@ body {
   line-height: 1.2;
   letter-spacing: -0.29px;
   margin-block-end: 1rem;
-  text-align: center;
 }
 
+
 .intro-paragraph {
-  text-align: center;
   font-size: 1rem;
   line-height: 1.625;
   margin-block-end: 4rem;
@@ -82,11 +87,16 @@ body {
   border-radius: calc(var(--border-radius) / 2);
   border: 1px solid hsl(0, 0%, 87%);
   padding: 0.9rem 1.18rem;
+  font-size: 0.9rem;
+  font-weight: var(--fw-semibold);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--blue);
 }
 
 .input-field::placeholder {
-  font-size: 0.9rem;
-  font-weight: var(--fw-semibold);
   color: hsl(248, 9%, 26%, 75%);
 }
 
@@ -115,4 +125,35 @@ body {
 .terms-link {
   color: var(--red);
   text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url('./images/bg-intro-desktop.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .intro {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+  }
+
+  .intro-text {
+    text-align: left;
+    flex-basis: 50%;
+  }
+
+  .intro-heading {
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: -0.52px;
+  }
+
+  .intro-paragraph {
+    font-size: 1rem;
+    line-height: 1.626;
+    letter-spacing: 0;
+  }
 }
