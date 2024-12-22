@@ -62,6 +62,7 @@ body {
   position: relative;
   overflow: hidden;
   height: fit-content;
+  box-shadow: 0 15px 30px -11px var(--grayish-blue);
 }
 
 .feature__card::before {
