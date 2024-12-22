@@ -83,7 +83,12 @@ body {
   border-radius: var(--border-radius);
 }
 
+.input-wrapper {
+  position: relative;
+}
+
 .input-field {
+  width: 100%;
   border-radius: calc(var(--border-radius) / 2);
   border: 1px solid hsl(0, 0%, 87%);
   padding: 0.9rem 1.18rem;
@@ -91,6 +96,25 @@ body {
   font-weight: var(--fw-semibold);
 }
 
+.input-field.error {
+  border: 2px solid var(--red);
+}
+
+.error-icon {
+  position: absolute;
+  right: 1.18rem;
+  top: 0.9rem;
+  display: none;
+}
+
+.error-log {
+  display: none;
+  color: var(--red);
+  font-size: 0.7rem;
+  font-style: italic;
+  margin-block-start: 0.5rem;
+  text-align: right;
+}
 .input-field:focus {
   outline: none;
   border-color: var(--blue);

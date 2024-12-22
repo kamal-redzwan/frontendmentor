@@ -21,6 +21,8 @@
 
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="styles.css" />
+
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main class="intro">
@@ -39,11 +41,75 @@
           $20/mo. thereafter
         </button>
         <form action="" class="signup-form">
-          <input type="text" placeholder="First Name" class="input-field" />
-          <input type="text" placeholder="Last Name" class="input-field" />
-          <input type="text" placeholder="Email Address" class="input-field" />
-          <input type="text" placeholder="Password" class="input-field" />
-          <button class="claim-button">Claim your free trial</button>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="input-field"
+              required
+            />
+            <span class="error-icon">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            </span>
+            <p class="error-log"></p>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="input-field"
+              required
+            />
+            <span class="error-icon">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            </span>
+            <p class="error-log"></p>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="input-field"
+            />
+            <span class="error-icon">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            </span>
+            <p class="error-log"></p>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" placeholder="Password" class="input-field" />
+            <span class="error-icon">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            </span>
+            <p class="error-log"></p>
+          </div>
+          <button class="claim-button" type="submit">
+            Claim your free trial
+          </button>
           <p class="terms">
             By clicking the button, you are agreeing to our
             <a class="terms-link" href="#">Terms and Services</a>
