@@ -14,8 +14,7 @@
 }
 
 body {
-  height: 100vh;
-
+  margin: auto 1rem;
   font-family: 'Inter', serif;
   font-size: 14px;
 
@@ -24,18 +23,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  position: relative;
 }
 
 .wrapper {
   height: 600px;
-  width: 384px;
+  max-width: 384px;
 
   background-color: var(--clr-grey-800);
 
   padding: 2.3rem;
-  margin-bottom: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -97,16 +93,4 @@ body {
 
   /* Removing focus ring */
   outline: none;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  color: white;
-
-  position: absolute;
-  bottom: 1rem;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
