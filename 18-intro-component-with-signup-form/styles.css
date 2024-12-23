@@ -27,6 +27,10 @@ body {
   align-items: center;
 }
 
+.intro {
+  margin: 1.5rem;
+}
+
 .intro-text,
 .signup {
   display: flex;
