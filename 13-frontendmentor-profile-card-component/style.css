@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-content: center;
-
+  margin: auto 1rem;
   font-family: var(--font-family-kumbh-sans);
   color: var(--clr-primary-very-dark-desaturated-blue);
 
