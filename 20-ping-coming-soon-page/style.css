@@ -1,0 +1,118 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+
+  --fs-normal: 20px;
+  --ff-libre-franklin: 'Libre Franklin', sans-serif;
+  --fw-light: 300;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+html {
+  font-size: var(--fs-normal);
+}
+
+body {
+  font-size: var(--fs-normal);
+  font-family: var(--ff-libre-franklin);
+  font-weight: var(--fw-light);
+  color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin: auto 2.4rem;
+}
+
+header img {
+  width: 2.8rem;
+  margin-block: 4.05rem 1.6rem;
+}
+
+.ping-coming-soon {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.ping-coming-soon h1 {
+  font-size: 1.1rem;
+  margin-block-end: 0.75rem;
+  font-weight: var(--fw-light);
+}
+
+.ping-coming-soon h1 span {
+  font-weight: var(--fw-bold);
+}
+
+.ping-coming-soon p {
+  font-size: 0.6rem;
+  margin-block-end: 1.6rem;
+}
+
+.ping-coming-soon form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15.1rem;
+}
+
+.ping-coming-soon form input {
+  width: 100%;
+  padding: 0.5rem 1.6rem;
+  margin-block-end: 0.5rem;
+  border: 1px solid var(--pale-blue);
+  border-radius: 1.4rem;
+  font-size: 0.6rem;
+  font-weight: var(--fw-light);
+  color: var(--pale-blue);
+}
+
+.ping-coming-soon form button {
+  all: unset;
+  padding: 0.5rem 1.6rem;
+  background-color: var(--blue);
+  border-radius: 1.4rem;
+  color: white;
+  font-size: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  margin-block-end: 3.6rem;
+}
+
+.ping-coming-soon img {
+  margin-block-end: 6rem;
+}
+
+/* aside {
+  margin-block-start: auto;
+} */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-icons a {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  padding: 0.275rem;
+  border-radius: 100%;
+  border: 1px solid hsl(223, 87%, 63%, 15%);
+}
+
+.social-icons a svg path {
+  fill: var(--blue);
+}
+
+footer {
+  font-weight: var(--fw-light);
+  font-size: 0.5rem;
+  color: var(--gray);
+  margin-block: 1.35rem 1.85rem;
+}
