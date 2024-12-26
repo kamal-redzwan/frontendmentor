@@ -118,3 +118,49 @@ footer {
   color: var(--gray);
   margin-block: 1.35rem 1.85rem;
 }
+
+@media screen and (min-width: 600px) {
+  header img {
+    width: 4.5rem;
+    margin-block: 4rem 2rem;
+  }
+
+  .ping-coming-soon h1 {
+    font-size: 2.4rem;
+    margin-block-end: 0.8rem;
+  }
+
+  .ping-coming-soon p {
+    font-size: 1rem;
+    margin-block-end: 2rem;
+  }
+
+  .ping-coming-soon form {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 637px;
+    align-items: start;
+  }
+
+  .ping-coming-soon form input {
+    width: 421px;
+    padding: 18px 30px;
+  }
+
+  .ping-coming-soon form button {
+    padding: 18px 62px;
+    margin-block-end: 3.6rem;
+    font-weight: var(--fw-semibold);
+  }
+
+  .ping-coming-soon img {
+    max-width: 32rem;
+    margin-block-end: 3.6rem;
+  }
+
+  footer {
+    font-size: 0.6rem;
+    margin-block-end: 2.45rem;
+  }
+}
