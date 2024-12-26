@@ -162,6 +162,11 @@ footer {
     align-items: start;
   }
 
+  .error_log {
+    text-align: left;
+    padding-inline-start: 30px;
+  }
+
   .ping-coming-soon form input {
     width: 421px;
     padding: 18px 30px;
