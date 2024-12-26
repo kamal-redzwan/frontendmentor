@@ -40,6 +40,10 @@ body {
   color: white;
 }
 
+.per-month {
+  display: block;
+  font-weight: normal;
+}
 
 .intro-text {
   text-align: center;
@@ -52,7 +56,6 @@ body {
   letter-spacing: -0.29px;
   margin-block-end: 1rem;
 }
-
 
 .intro-paragraph {
   font-size: 1rem;
@@ -74,7 +77,7 @@ body {
   box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.1469);
 }
 
-.trial-button span {
+.trial-button .try-span {
   font-weight: var(--fw-bold);
 }
 
@@ -85,6 +88,7 @@ body {
   padding: var(--form-padding);
   background-color: white;
   border-radius: var(--border-radius);
+  box-shadow: 0px 8px 0px 0px hsla(0, 0%, 0%, 0.1469);
 }
 
 .input-wrapper {
@@ -183,5 +187,9 @@ body {
     font-size: 1rem;
     line-height: 1.626;
     letter-spacing: 0;
+  }
+
+  .per-month {
+    display: inline;
   }
 }
