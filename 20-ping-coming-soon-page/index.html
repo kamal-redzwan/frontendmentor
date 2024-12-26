@@ -44,10 +44,15 @@
       <p class="copy">Subscribe and get notified</p>
       <form action="">
         <div class="input-wrapper">
-          <input class="input_email" type="email" placeholder="Your email address..." />
+          <input
+            class="input_email"
+            type="email"
+            placeholder="Your email address..."
+            required
+          />
           <p class="error_log">Please provide a valid email address</p>
         </div>
-        <button>Notify Me</button>
+        <button type="submit" onclick="validateForm()">Notify Me</button>
       </form>
       <img src="./images/illustration-dashboard.png" alt="App dashboard" />
     </main>

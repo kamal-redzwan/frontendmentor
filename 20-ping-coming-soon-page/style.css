@@ -1,5 +1,6 @@
 :root {
   --blue: hsl(223, 87%, 63%);
+  --blue-hover: hsl(223, 87%, 63%, 80.4%);
   --pale-blue: hsl(223, 100%, 88%);
   --light-red: hsl(354, 100%, 66%);
   --gray: hsl(0, 0%, 59%);
@@ -84,6 +85,11 @@ header img {
   font-size: 0.6rem;
   padding: 0.6rem 1.2rem;
   margin-block-end: 3.6rem;
+  cursor: pointer;
+}
+
+.ping-coming-soon form button:hover {
+  background-color: var(--blue-hover);
 }
 
 .ping-coming-soon form .error_log {
@@ -98,10 +104,6 @@ header img {
   margin-block-end: 6rem;
 }
 
-/* aside {
-  margin-block-start: auto;
-} */
-
 .social-icons {
   display: flex;
   justify-content: center;
@@ -115,6 +117,14 @@ header img {
   padding: 0.275rem;
   border-radius: 100%;
   border: 1px solid hsl(223, 87%, 63%, 15%);
+}
+
+.social-icons a:hover {
+  background-color: var(--blue);
+}
+
+.social-icons a:hover svg path {
+  fill: white;
 }
 
 .social-icons a svg path {
