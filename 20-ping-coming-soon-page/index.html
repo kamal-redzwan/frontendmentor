@@ -31,6 +31,8 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
+    <script src="./script.js"></script>
+
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
@@ -38,10 +40,13 @@
       <img src="./images/logo.svg" alt="Ping Logo" />
     </header>
     <main class="ping-coming-soon">
-      <h1>We are launching <span>soon!</span></h1>
-      <p>Subscribe and get notified</p>
+      <h1 class="heading">We are launching <span>soon!</span></h1>
+      <p class="copy">Subscribe and get notified</p>
       <form action="">
-        <input type="email" placeholder="Your email address..." />
+        <div class="input-wrapper">
+          <input class="input_email" type="email" placeholder="Your email address..." />
+          <p class="error_log">Please provide a valid email address</p>
+        </div>
         <button>Notify Me</button>
       </form>
       <img src="./images/illustration-dashboard.png" alt="App dashboard" />
