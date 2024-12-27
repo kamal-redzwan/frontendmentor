@@ -144,12 +144,12 @@ footer {
     margin-block: 4rem 2rem;
   }
 
-  .ping-coming-soon h1 {
+  .ping-coming-soon .heading {
     font-size: 2.4rem;
     margin-block-end: 0.8rem;
   }
 
-  .ping-coming-soon p {
+  .ping-coming-soon .copy {
     font-size: 1rem;
     margin-block-end: 2rem;
   }
