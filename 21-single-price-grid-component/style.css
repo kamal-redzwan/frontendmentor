@@ -1,0 +1,131 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsla(0, 0%, 100%, 15.19%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --fs-normal: 16px;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --border-radius: 0.3125rem;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: auto 2rem;
+  background-color: var(--grayish-blue);
+  font-family: 'Karla', sans-serif;
+}
+
+.single-price__header {
+  padding: 1.5rem 1.75rem 1.5rem 2rem;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  background-color: var(--light-gray);
+}
+
+.single-price__header h1 {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--cyan);
+  letter-spacing: -0.25px;
+  margin-block-end: 1.5rem;
+}
+
+.single-price__header p {
+  font-size: 0.9375rem;
+  font-weight: var(--fw-normal);
+}
+
+.header-guarantee {
+  color: var(--bright-yellow);
+  letter-spacing: -0.19px;
+  margin-block-end: 1rem;
+}
+
+.header-access {
+  font-size: 0.875rem;
+  color: var(--grayish-blue);
+  line-height: 1.625rem;
+  letter-spacing: -0.17px;
+}
+
+.single-price__pricing {
+  background-color: var(--cyan);
+}
+
+.single-price__pricing-monthly {
+  padding: 1.5rem;
+}
+
+.single-price__pricing-monthly h2 {
+  font-size: 1.125rem;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  letter-spacing: -0.22px;
+  margin-block-end: 1.125rem;
+}
+
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-block-end: 0.25rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  letter-spacing: -0.4px;
+}
+
+.per-month {
+  font-size: 1rem;
+  color: var(--white);
+  opacity: 50%;
+  line-height: 1.625rem;
+  letter-spacing: -0.2px;
+}
+
+.full-access {
+  line-height: 1.625rem;
+  letter-spacing: 0.2px;
+  color: var(--white);
+  margin-block-end: 1.625rem;
+}
+
+.btn-primary {
+  all: unset;
+  padding-block: 0.9rem;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--bright-yellow);
+  letter-spacing: -0.2px;
+  border-radius: var(--border-radius);
+}
+
+.single-price__why-us {
+  padding: 1.5rem;
+  background-color: var(--light-cyan);
+}
+
+.single-price__why-us h2 {
+  font-size: 1.125rem;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  margin-block-end: 1.125rem;
+}
+
+.single-price__why-us ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  opacity: 75%;
+}
