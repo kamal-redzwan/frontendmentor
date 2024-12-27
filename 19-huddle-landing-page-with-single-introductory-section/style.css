@@ -75,7 +75,7 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-  margin-block: auto 2.5rem;
+  margin-block: 2.5rem;
 }
 
 .social-icons a {
