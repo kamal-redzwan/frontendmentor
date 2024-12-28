@@ -1,16 +1,19 @@
 :root {
+  /* Colors */
   --cyan: hsl(179, 62%, 43%);
   --light-cyan: hsla(0, 0%, 100%, 15.19%);
   --bright-yellow: hsl(71, 73%, 54%);
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
   --white: hsl(0, 0%, 100%);
-
+  
+  /* Fonts */
   --fs-normal: 16px;
   --fw-normal: 400;
   --fw-bold: 700;
 
   --border-radius: 0.3125rem;
+  --container-box-shadow: 0px 15px 30px 0 hsla(212%, 100%, 33%, 14.88%);
 }
 
 body {
@@ -22,18 +25,18 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto 2rem;
-  background-color: var(--grayish-blue);
+  background-color: var(--light-gray);
   font-family: 'Karla', sans-serif;
 }
 
 .single-price__container {
-  box-shadow: 0px 15px 30px 0 hsla(212%, 100%, 33%, 14.88%);
+  box-shadow: var(--container-box-shadow);
 }
 
 .single-price__header {
   padding: 1.5rem 1.75rem 1.5rem 2rem;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
-  background-color: var(--light-gray);
+  background-color: var(--white);
 }
 
 .single-price__header h1 {
