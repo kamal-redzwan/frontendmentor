@@ -47,12 +47,8 @@ body {
   margin-block-end: 1.5rem;
 }
 
-.single-price__header p {
-  font-size: 0.9375rem;
-  font-weight: var(--fw-normal);
-}
-
 .header-guarantee {
+  font-size: 0.9375rem;
   color: var(--bright-yellow);
   letter-spacing: -0.19px;
   margin-block-end: 1rem;
