@@ -1,0 +1,76 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --dark-blue: hsl(207, 100%, 98%);
+
+  --ff-heading: 'Poppins', sans-serif;
+  --ff-body: 'Open Sans', sans-serif;
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+.wrapper {
+  margin: auto 2.5rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.nav-logo {
+  width: 96px;
+}
+
+.nav-btn {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-normal);
+  font-size: 0.6rem;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  border-radius: 1rem;
+  padding: 0.4rem 1.125rem;
+}
+
+.main-hero {
+  text-align: center;
+  padding-block: 7rem 7.5rem;
+}
+
+.hero-text h1 {
+  font-family: var(--ff-heading);
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: var(--dark-cyan);
+  margin-block-end: 1.5rem;
+}
+
+.hero-text p {
+  font-family: var(--ff-body);
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: var(--dark-cyan);
+  margin-block-end: 3rem;
+}
+
+.hero-text button {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-semi-bold);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: white;
+  background-color: var(--pink);
+  border-radius: 1.2rem;
+  padding: 0.7rem 2.5rem;
+  box-shadow: 0px 3px 7px 0 hsl(192, 100%, 9%, 22.31%);
+  margin-block-end: 6.5rem;
+}
