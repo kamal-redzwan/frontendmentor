@@ -13,9 +13,13 @@
   --fw-bold: 700;
 }
 
+/* Utilities */
+
 .wrapper {
   margin: auto 2.5rem;
 }
+
+/* Navigation */
 
 .main-nav {
   display: flex;
@@ -39,6 +43,8 @@
   border-radius: 1rem;
   padding: 0.4rem 1.125rem;
 }
+
+/* Hero Section */
 
 .main-hero {
   text-align: center;
@@ -76,6 +82,8 @@
   margin-block-end: 6.5rem;
 }
 
+/* Stats Section */
+
 .stats {
   display: flex;
   flex-direction: column;
@@ -106,4 +114,38 @@
   font-size: 0.875rem;
   color: var(--gray);
   align-self: center;
+}
+
+/* Grow Together Section */
+
+.grow-together {
+  background-color: var(--dark-blue);
+}
+
+.grow-together .wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-block: 6rem;
+}
+
+.grow-text {
+  text-align: center;
+  color: var(--dark-cyan);
+}
+
+.grow-text h2 {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-block-end: 1rem;
+}
+
+.grow-text p {
+  font-size:  0.875rem;
+  line-height: 1.3125rem;
+}
+
+.grow-image {
+  width: 280px;
+  margin-block-end: 2.5rem;
 }
