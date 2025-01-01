@@ -1,0 +1,128 @@
+[
+  {
+    "href": "./01-frontendmentor-recipe-page/",
+    "image": "./01-frontendmentor-recipe-page/preview.jpg",
+    "title": "Recipe Page",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./02-frontendmentor-social-links-profile",
+    "image": "./02-frontendmentor-social-links-profile/preview.jpg",
+    "title": "Social Links Profile",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./03-frontendmentor-blog-preview-card",
+    "image": "./03-frontendmentor-blog-preview-card/preview.jpg",
+    "title": "Blog Preview Card",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./04-frontendmentor-faq-accordion",
+    "image": "./04-frontendmentor-faq-accordion/desktop-preview.jpg",
+    "title": "FAQ Accordion",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./05-frontendmentor-results-summary-component",
+    "image": "./05-frontendmentor-results-summary-component/desktop-preview.jpg",
+    "title": "Results Summary Component",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./06-frontendmentor-nft-preview-card-component",
+    "image": "./06-frontendmentor-nft-preview-card-component/desktop-preview.jpg",
+    "title": "NFT Preview Card Component",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./07-frontendmentor-product-preview-card-component",
+    "image": "./07-frontendmentor-product-preview-card-component/desktop-preview.jpg",
+    "title": "Product Preview Card Component",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./08-frontendmentor-interactive-rating-component",
+    "image": "./08-frontendmentor-interactive-rating-component/desktop-preview.jpg",
+    "title": "Interactive Rating Component",
+    "tech": "HTML, CSS & JS"
+  },
+  {
+    "href": "./09-frontendmentor-qr-code-component",
+    "image": "./09-frontendmentor-qr-code-component/preview.jpg",
+    "title": "QR Code Component",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./10-frontendmentor-order-summary-component",
+    "image": "./10-frontendmentor-order-summary-component/desktop-preview.jpg",
+    "title": "Order Summary Component",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./11-frontendmentor-stats-preview-card-component",
+    "image": "./11-frontendmentor-stats-preview-card-component/desktop-preview.jpg",
+    "title": "Stats Preview Card Component",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./12-frontendmentor-3-column-preview-card-component",
+    "image": "./12-frontendmentor-3-column-preview-card-component/desktop-preview.jpg",
+    "title": "3-Column Preview Card Component",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./13-frontendmentor-profile-card-component",
+    "image": "./13-frontendmentor-profile-card-component/desktop-preview.jpg",
+    "title": "Profile Card Component",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./14-frontendmentor-social-proof-section",
+    "image": "./14-frontendmentor-social-proof-section/desktop-preview.jpg",
+    "title": "Social Proof Section",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./15-frontendmentor-article-preview-component",
+    "image": "./15-frontendmentor-article-preview-component/desktop-preview.jpg",
+    "title": "Article Preview Component",
+    "tech": "HTML, CSS & JS"
+  },
+  {
+    "href": "./16-four-card-feature-section/",
+    "image": "./16-four-card-feature-section/desktop-preview.jpg",
+    "title": "Four Card Feature Section",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./17-base-apparel-coming-soon/",
+    "image": "./17-base-apparel-coming-soon/desktop-preview.jpg",
+    "title": "Base Apparel Coming Soon",
+    "tech": "HTML, CSS & JS"
+  },
+  {
+    "href": "./18-intro-component-with-signup-form/",
+    "image": "./18-intro-component-with-signup-form/design/desktop-preview.jpg",
+    "title": "Intro Component with Signup Form",
+    "tech": "HTML, CSS & JS"
+  },
+  {
+    "href": "./19-huddle-landing-page-with-single-introductory-section/",
+    "image": "./19-huddle-landing-page-with-single-introductory-section/desktop-preview.jpg",
+    "title": "Huddle Landing Page with Single Introductory Section",
+    "tech": "HTML & CSS"
+  },
+  {
+    "href": "./20-ping-coming-soon-page/",
+    "image": "./20-ping-coming-soon-page/desktop-preview.jpg",
+    "title": "Ping Coming Soon Page",
+    "tech": "HTML, CSS & JS"
+  },
+  {
+    "href": "./21-single-price-grid-component/",
+    "image": "./21-single-price-grid-component/desktop-preview.jpg",
+    "title": "Single Price Grid Component",
+    "tech": "HTML & CSS"
+  }
+]
