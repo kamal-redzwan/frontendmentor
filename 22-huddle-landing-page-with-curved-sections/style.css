@@ -67,7 +67,8 @@
   margin-block-end: 3rem;
 }
 
-.hero-text button {
+.hero-text button,
+.ready button {
   all: unset;
   cursor: pointer;
   font-family: var(--ff-body);
@@ -116,36 +117,124 @@
   align-self: center;
 }
 
-/* Grow Together Section */
-
 .grow-together {
   background-color: var(--dark-blue);
 }
 
-.grow-together .wrapper {
+.grow-together .wrapper,
+.your-users .wrapper {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   padding-block: 6rem;
 }
 
-.grow-text {
+.grow-text,
+.flow-text,
+.user-text {
   text-align: center;
   color: var(--dark-cyan);
 }
 
-.grow-text h2 {
+.grow-text h2,
+.flow-text h2,
+.user-text h2 {
+  font-family: var(--ff-heading);
   font-size: 1.25rem;
   line-height: 1.875rem;
   margin-block-end: 1rem;
 }
 
-.grow-text p {
-  font-size:  0.875rem;
+.grow-text p,
+.flow-text p,
+.user-text p {
+  font-family: var(--ff-body);
+  font-size: 0.875rem;
   line-height: 1.3125rem;
+  margin-block-end: 12.5rem;
 }
 
-.grow-image {
+.grow-image,
+.flow-image,
+.user-image {
   width: 280px;
   margin-block-end: 2.5rem;
+}
+
+.flowing-conversations .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 6rem;
+}
+
+/* Ready to Build Section */
+.ready .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 6rem;
+}
+
+.ready h2 {
+  font-family: var(--ff-heading);
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: var(--dark-cyan);
+  margin-block-end: 2.5rem;
+  text-align: center;
+}
+
+/* Newsletter Section */
+
+.newsletter {
+  background-color: var(--dark-cyan);
+  padding-block: 6rem;
+}
+
+.newsletter h2 {
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: white;
+  margin-block-end: 1rem;
+}
+
+.newsletter p {
+  font-family: var(--ff-body);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: white;
+  margin-block-end: 2rem;
+}
+
+form.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form.newsletter-form input {
+  all: unset;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  background-color: white;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+form.newsletter-form button {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+  background-color: var(--pink);
+  border-radius: 5px;
+  padding: 0.75rem 2.5625rem;
+  align-self: flex-end;
+  /* box-shadow: 0px 3px 7px 0 hsl(192, 100%, 9%, 22.31%); */
 }
