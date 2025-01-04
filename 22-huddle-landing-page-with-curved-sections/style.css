@@ -119,6 +119,50 @@
 
 .grow-together {
   background-color: var(--dark-blue);
+  position: relative;
+}
+
+.grow-together::before {
+  content: '';
+  z-index: -1;
+  background-image: url('./images/bg-section-top-mobile-1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grow-together::after {
+  content: '';
+  z-index: -1;
+  background-image: url('./images/bg-section-bottom-mobile-1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  width: 100%;
+  height: 40%;
+}
+
+.grow-together .wrapper::after {
+  content: '';
+  z-index: -1;
+  background-image: url('./images/bg-section-bottom-mobile-2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  width: 80%;
+  height: 40%;
+  transform: rotateY(.5turn);
 }
 
 .grow-together .wrapper,
@@ -286,11 +330,10 @@ form.newsletter-form button {
   margin-block-start: 3rem;
 }
 
-.footer-social .svg-inline--fa { 
+.footer-social .svg-inline--fa {
   width: 1.5rem;
   height: 1.5rem;
 }
-
 
 .footer-social .svg-inline--fa path {
   fill: white;
