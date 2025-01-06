@@ -1,4 +1,3 @@
 TODO
 
-22 - [ ] Footer
-   - [ ] Desktop Breakpoint
+22 - [ ] Desktop Breakpoint
